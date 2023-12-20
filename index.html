@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Indie+Flower&family=Jomhuria&family=Lobster+Two&family=Montserrat&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bookmark.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body class="bg-info-subtle">
+    <div class="container py-5 py-4">
+      <head class="head">
+        <div class="toastss">
+         
+
+          <div class="toast-container position-fixed top-50 end-50 p-3">
+            <div
+              id="liveToast"
+              class="toast"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            >
+              <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="..." />
+                <strong class="me-auto bg-danger">Bootstrap</strong>
+                <small>just now</small>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="toast-body bg-warning">
+                please enter valid URL
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="title-book-mark m-auto mb-5">Book mark</h1>
+        <p style="border: 2px dotted black"></p>
+
+        <h1 class="text-center favorite">
+          <i class="text-body-secondary fa-solid fa-bookmark"></i> Bookmark your
+          favorite sites
+          <i class="text-body-secondary fa-solid fa-bookmark"></i>
+        </h1>
+      </head>
+      <section class="forms">
+        <div class="form-group">
+          <label class="fs-4 fw-bold" for="siteName"> site name</label>
+          <input
+            class="form-control"
+            id="siteName"
+            type="text"
+            placeholder="enter name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="fs-4 fw-bold" for="urlName">
+            <i class="fa-solid fa-link"></i> site url</label
+          >
+          <input
+            id="urlName"
+            type="text"
+            class="form-control"
+            placeholder="enter name"
+          />
+        </div>
+        <div class="btn-form text-center">
+          <button  id="submitbtn" onclick="addUrlFavorite()" class="btn btn-danger my-4 px-5">
+            submit
+          </button>
+        </div>
+        <p style="border: 2px dotted black"></p>
+
+        <table class="table text-center my-4">
+          <thead class="p-2 table-danger">
+            <tr class="p-2">
+              <th class="col-1" scope="col-6">index</th>
+              <th class="col-5">website name</th>
+              <th class="col-3">visit</th>
+              <th class="col-3">delet</th>
+            </tr>
+          </thead>
+          <tbody id="trs" class="p-3"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bookmark.js"></script>
+  </body>
+</html>

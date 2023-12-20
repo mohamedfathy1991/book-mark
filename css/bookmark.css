@@ -1,0 +1,51 @@
+
+::selection{
+     background-color: orange;
+}
+body{
+     
+
+     
+}
+.title-book-mark{
+     width:fit-content;
+     font-family: "Pacifico" ,'Times New Roman', Times, serif;
+     transition: 3s;
+     position: relative;
+     font-size: 50px;
+
+
+}
+.title-book-mark::after{
+     content: "";
+     position: absolute;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ top: 50%;
+ background-color: orange;
+ z-index: -1;
+}
+.title-book-mark:hover::after{
+     
+     top  : 25%;
+     bottom: 0;
+     transition: .5s;
+     
+}
+.form-control:focus{
+     border-color: black;
+    box-shadow:  0 0 10px  orange
+   
+}
+.favorite{
+     background-image: linear-gradient(to right, red,green);
+
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent
+}
+
+
+  
+
+
